@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Soumil Desai - Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <!--! font awesome cdn link  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <!-- AOS CDN CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
+</head>
+
+<body>
+    <div class="header_secstion">
+        <nav>
+            <div class="logo">
+                <h3 alt="" data-aos="fade" data-aos-duration="2000" data-aos-delay="200">Soumil Desai</h3>
+            </div>
+            <ul class="menu">
+                <li data-aos="fade-down" data-aos-duration="2000" data-aos-delay="100"><a href="index.html">Home</a></li>
+                <li data-aos="fade-down" data-aos-duration="2000" data-aos-delay="400"><a href="projects.html">Projects</a></li>
+                <li data-aos="fade-down" data-aos-duration="2000" data-aos-delay="400"><a href="references.html">References</a></li>
+                <li data-aos="fade-down" data-aos-duration="2000" data-aos-delay="700"><a href="contact.html">Contact</a></li>
+
+            </ul>
+            <div class="bars">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+        </nav>
+
+        <div class="container">
+            <div class="text-box t1">
+                <a href="https://github.com/soumildesai" style="font-size: large;">Code for ALL projects - Github</a>
+            </div>
+            <br/>
+            <div class="text-box t1">
+                <p style="color: black; font-weight: bold; font-size: large;">**12th Grade Research Paper:</p>
+                <a href="https://docs.google.com/document/d/17BNJsqqUEuqrOCsh6UVajm531YAmCN0SBjwtYVhkyPA/edit?usp=sharing">Hardware Security Research Paper - Investigating the Security of PCIe Passthrough Connections with Fuzzing</a> <br>
+                <a href="https://docs.google.com/presentation/d/1GJmR6udH_4dHkiEnnltmTefkRh-aou76cDz0LhYnl6I/edit?usp=sharing">Poster for same project - presented at BU RISE Research Symposium (to be used for Regeneron)</a>
+            </div>
+            <br/>
+            <div class="text-box t1">
+                <p style="color: black; font-weight: bold;">For my 10th grade Voice Activated Drone AI Project:</p>
+                <a href="https://youtu.be/Du7K6cy8a6Y">Object Detection Demonstration</a> <br>
+                <a href="https://sites.google.com/view/soumildesaidrones/home">Entire engineering process for project</a>
+            </div>
+            <br/>
+            <div class="text-box t1">
+                <p style="color: Black; font-weight: bold;">Miscellaneous</p>
+                <a href="https://youtube.com/metatechnology">YouTube Channel - Programming Tutorials</a>
+                
+            </div>
+        </div>
+    </div>
+
+    <!-- Typed Js -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.0/typed.js"></script>
+    <!-- AOS Js -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+    <script>
+        // ----------------Responsive Menu
+        let bar = document.querySelector(".bars .fa-bars");
+        let menu = document.querySelector(".menu");
+        
+        bar.addEventListener("click",function(){
+            menu.classList.toggle("show_menu");
+        });
+        
+        // ---------------- AOS Animation Init
+        AOS.init()
+        
+        // ---------------- Typed Javascript
+        var typed = new Typed('.text', {
+        strings: ['Innovator', 'Developer','Pushing What\'s Possible.'],
+        typeSpeed: 100,
+        backSpeed: 80,
+        showCursor: false,
+        loop: true,
+        loopCount: Infinity,
+        });
+
+    </script>
+
+</body>
+
+</html>
