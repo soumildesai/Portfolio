@@ -468,3 +468,10 @@ section {
     max-width: 100%;
     left: 0;
 }
+textarea:focus, input:focus {
+    color: rgb(0, 179, 134);
+}
+
+input, select, textarea{
+    color: #000;
+}
